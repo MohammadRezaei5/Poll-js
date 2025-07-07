@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نظرسنجی</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>به نظرت کدومش سریع‌تره؟</h1>
+      <div class="answears-wrapper">
+        <label for="cheetah">
+          <div class="answear">
+            <img class="cheetah-img" src="./assets/cheetah.jpg" alt="" />
+            <div class="radio-wrapper">
+              <input type="radio" name="speed_choice" id="cheetah" />
+              <span>یوزپلنگ</span>
+            </div>
+          </div>
+        </label>
+
+        <label for="eagle">
+          <div class="answear">
+            <img class="eagle-img" src="./assets/Golden-Eagle.jpg" alt="" />
+            <div class="radio-wrapper">
+              <input type="radio" name="speed_choice" id="eagle" />
+              <span>عقاب طلایی</span>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="submit-btn">
+        <button>نمایش نتیجه</button>
+      </div>
+    </div>
+    <!-- result -->
+    <div class="result-container">
+      <div class="result-wrapper">
+        <div class="result-answear">
+          <strong>انتخاب شما: </strong>
+          <span class="your-choice"></span>
+        </div>
+        <p class="correct-answear">
+          <strong>پاسخ درست: </strong> <em>یوزپلنگ</em> – با حداکثر سرعت حدود
+          112–120 کیلومتر بر ساعت، در حالی که عقاب طلایی هنگام شیرجه به حدود
+          150–160 می‌رسه، ولی در پرواز معمولی سرعتش کمتره. پس بستگی داره منظورت
+          از "سرعت" در چه شرایطی باشه، همین باعث جذابیت سوال میشه.
+        </p>
+      </div>
+      <div class="reload-container">
+        <button onclick="refreshPage()" class="reload-btn">
+          شروع مجدد
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M17.65 6.35A7.96 7.96 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
